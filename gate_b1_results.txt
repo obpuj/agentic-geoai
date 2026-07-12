@@ -1,0 +1,61 @@
+[PASS] (ok) How much did built-up area grow in Jayanagar between 2020 and 2025?
+        ok -> urban_expansion | Jayanagar (1 ward(s)) | years [2020, 2025]
+
+[PASS] (ok) Show the built-up map of Bellandur as of 2024.
+        ok -> built_up_mapping | Bellanduru (1 ward(s)) | years [2024]
+
+[PASS] (ok) Did Kaddugodi lose vegetation from 2019 to 2025?
+        ok -> vegetation_change | Kadugodi (1 ward(s)) | years [2019, 2025] | notes: ["Interpreted 'Kaddugodi' as ward 'Kadugodi'."]
+
+[PASS] (ok) Land cover of HSR Layout in 2024.
+        ok -> land_cover | Hsr Layout (1 ward(s)) | years [2024] | notes: ["'Hsr Layout' interpreted as ward(s): HSR Layout"]
+
+[PASS] (ok) Urban expansion in Whitefield from 2019 to 2025.
+        ok -> urban_expansion | Whitefield (4 ward(s)) | years [2019, 2025] | notes: ["'Whitefield' interpreted as ward(s): Kadugodi, Hagadur, Garudachar Playa, Hudi"]
+
+[PASS] (ok) How has Sarjapur Road changed over the years?
+        ok -> trend | Sarjapur Road (1 ward(s)) | years [2019, 2020, 2021, 2022, 2023, 2024, 2025] | notes: ["'Sarjapur Road' interpreted as ward(s): Bellanduru"]
+
+[PASS] (ok) How much did Bengaluru's built-up area grow between 2019 and 2025?
+        ok -> urban_expansion | BBMP (all 198 wards) (198 ward(s)) | years [2019, 2025]
+
+[PASS] (ok) Show the city's land cover for 2024.
+        ok -> land_cover | BBMP (all 198 wards) (198 ward(s)) | years [2024]
+
+[PASS] (ok) Did the city lose vegetation from 2010 to 2024?
+        ok -> vegetation_change | BBMP (all 198 wards) (198 ward(s)) | years [2019, 2024] | notes: ['Start year moved from 2010 to 2019. Consistent Sentinel-2 coverage for Bengaluru begins in 2019; the system covers 2019-2025. Requests entirely before 2019 cannot be served from Sentinel-2 data.']
+
+[PASS] (ok) Built-up map of Yelahanka Satellite Town in 2030.
+        ok -> built_up_mapping | Yelahanka Satellite Town (1 ward(s)) | years [2025] | notes: ['2030 not yet processed; using 2025.']
+
+[PASS] (clarify) Show me the changes in Hebbal.
+        clarify -> Which years should I compare for Hebbal? For example 2019 to 2025.
+
+[PASS] (clarify) Analyze urban growth.
+        clarify -> Please name a place (a BBMP ward, a locality like Whitefield, or the whole city) and the years, e.g. 'urban growth in Yelahanka from 2019 to 2025'.
+
+[PASS] (clarify) How fast is the city growing?
+        clarify -> Please specify the type of growth (e.g. built-up area, urban expansion, vegetation change) and the years for comparison, e.g. 'urban expansion in the city from 2019 to 2025'.
+
+[PASS] (rejected) Compare urban expansion in Mysuru between 2020 and 2025.
+        rejected -> 'Mysuru' is not a BBMP ward, known locality, or region term. Coverage is the 198 BBMP wards.
+
+[PASS] (rejected) Built-up map of Electronic City in 2024.
+        rejected -> Electronic City lies largely outside BBMP's 198-ward boundary (Anekal taluk). It is not covered by the ward-based analysis.
+
+[PASS] (rejected) Land cover of Mumbai in 2024.
+        rejected -> Location 'Mumbai' is not in the Bengaluru region. Available locations are within the Bengaluru region.
+
+[PASS] (rejected) How did Jayanagar change between 2005 and 2012?
+        rejected -> Consistent Sentinel-2 coverage for Bengaluru begins in 2019; the system covers 2019-2025. Requests entirely before 2019 cannot be served from Sentinel-2 data.
+
+[PASS] (rejected) What's the flood risk in Whitefield?
+        rejected -> Flood risk analysis is not supported. Available: built-up mapping, land cover, change detection, urban expansion, vegetation change, and multi-year trends.
+
+[PASS] (rejected) How bad is traffic on Sarjapur Road?
+        rejected -> Traffic analysis is not supported. Available: built-up mapping, land cover, change detection, urban expansion, vegetation change, and multi-year trends.
+
+[PASS] (rejected) Property price trends in HSR Layout.
+        rejected -> Property price analysis is not supported. Available: built-up mapping, land cover, change detection, urban expansion, vegetation change, and multi-year trends.
+
+Gate B1: 20/20 passed
