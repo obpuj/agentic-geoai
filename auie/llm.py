@@ -35,7 +35,7 @@ def _post_with_retry(url: str, **kwargs) -> requests.Response:
             resp.raise_for_status()
         wait = resp.headers.get("Retry-After")
         wait_s = float(wait) if wait and wait.replace(".", "", 1).isdigit() else delay
-        time.sleep(min(wait_s, 30.0))
+        time.sleep(min(wait_s, 60.0))
         delay *= 2
     raise RuntimeError("unreachable")
 
@@ -52,17 +52,33 @@ class GeminiClient:
         self.api_key = api_key or os.environ["GEMINI_API_KEY"]
         self.timeout = timeout
 
-    def complete(self, system: str, user: str) -> str:
+    # def complete(self, system: str, user: str) -> str:
+    #     resp = _post_with_retry(
+    #         self.URL.format(m=self.MODEL),
+    #         params={"key": self.api_key},
+    #         json={
+    #             "system_instruction": {"parts": [{"text": system}]},
+    #             "contents": [{"role": "user", "parts": [{"text": user}]}],
+    #             "generationConfig": {
+    #                 "temperature": 0.0,
+    #                 "responseMimeType": "application/json",
+    #             },
+    #         },
+    #         timeout=self.timeout,
+    #     )
+    #     return resp.json()["candidates"][0]["content"]["parts"][0]["text"]
+    
+    def complete(self, system: str, user: str, json_output: bool = True) -> str:
+        gen_config = {"temperature": 0.0}
+        if json_output:
+            gen_config["responseMimeType"] = "application/json"
         resp = _post_with_retry(
             self.URL.format(m=self.MODEL),
             params={"key": self.api_key},
             json={
                 "system_instruction": {"parts": [{"text": system}]},
                 "contents": [{"role": "user", "parts": [{"text": user}]}],
-                "generationConfig": {
-                    "temperature": 0.0,
-                    "responseMimeType": "application/json",
-                },
+                "generationConfig": gen_config,
             },
             timeout=self.timeout,
         )
@@ -77,19 +93,38 @@ class GroqClient:
         self.api_key = api_key or os.environ["GROQ_API_KEY"]
         self.timeout = timeout
 
-    def complete(self, system: str, user: str) -> str:
+    # def complete(self, system: str, user: str) -> str:
+    #     resp = _post_with_retry(
+    #         self.URL,
+    #         headers={"Authorization": f"Bearer {self.api_key}"},
+    #         json={
+    #             "model": self.MODEL,
+    #             "temperature": 0.0,
+    #             "response_format": {"type": "json_object"},
+    #             "messages": [
+    #                 {"role": "system", "content": system},
+    #                 {"role": "user", "content": user},
+    #             ],
+    #         },
+    #         timeout=self.timeout,
+    #     )
+    #     return resp.json()["choices"][0]["message"]["content"]
+    
+    def complete(self, system: str, user: str, json_output: bool = True) -> str:
+        payload = {
+            "model": self.MODEL,
+            "temperature": 0.0,
+            "messages": [
+                {"role": "system", "content": system},
+                {"role": "user", "content": user},
+            ],
+        }
+        if json_output:
+            payload["response_format"] = {"type": "json_object"}
         resp = _post_with_retry(
             self.URL,
             headers={"Authorization": f"Bearer {self.api_key}"},
-            json={
-                "model": self.MODEL,
-                "temperature": 0.0,
-                "response_format": {"type": "json_object"},
-                "messages": [
-                    {"role": "system", "content": system},
-                    {"role": "user", "content": user},
-                ],
-            },
+            json=payload,
             timeout=self.timeout,
         )
         return resp.json()["choices"][0]["message"]["content"]
@@ -102,7 +137,8 @@ class ScriptedClient:
         self._responses = list(responses)
         self.calls: list[tuple[str, str]] = []
 
-    def complete(self, system: str, user: str) -> str:
+    # def complete(self, system: str, user: str) -> str:
+    def complete(self, system: str, user: str, **kwargs) -> str:
         self.calls.append((system, user))
         if not self._responses:
             raise RuntimeError("ScriptedClient ran out of responses")

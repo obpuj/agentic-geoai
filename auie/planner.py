@@ -44,7 +44,7 @@ Rules:
 1. "out_of_scope" is ONLY for unsupported analysis types (flood risk, air quality, traffic, property prices, population...). It is NEVER about the location.
 2. Copy locations verbatim: "Koramangala" stays "Koramangala", "Mysuru" stays "Mysuru", "Bengaluru"/"the city" stays as written. Do not correct spelling.
 3. "needs_clarification" when the analysis or required years are missing and not implied. Do not invent years.
-4. Year phrases: "between X and Y"/"from X to Y" -> start_year/end_year. "as of X"/"in X" -> year. "currently"/"latest"/"now" -> year {max(config.AVAILABLE_YEARS)}. "over the years"/"trend"/"how has it changed over time" -> analysis "trend" with years null unless bounds are stated.
+4. Year phrases: "between X and Y"/"from X to Y" -> start_year/end_year. "as of X"/"in X" -> year. "currently"/"latest"/"now" -> year {max(config.AVAILABLE_YEARS)}. "over the years"/"trend"/"how has it changed over time" -> analysis "trend" with years null unless bounds are stated. "since X" -> start_year=X, end_year=2025.
 5. Emit the years the user said, even old ones like 2010 — the resolver handles availability.
 
 Examples:
@@ -57,6 +57,12 @@ A: {{"status":"ok","task":{{"location":"Whitefield","analysis_type":"built_up_ma
 
 Q: How has Bellandur changed over the years?
 A: {{"status":"ok","task":{{"location":"Bellandur","analysis_type":"trend","year":null,"start_year":null,"end_year":null,"parameters":{{}}}},"message":null}}
+
+Q: Vegetation change in Hagadur since 2016.
+A: {{"status":"ok","task":{{"location":"Hagadur","analysis_type":"vegetation_change","year":null,"start_year":2016,"end_year":2025,"parameters":{{}}}},"message":null}}
+
+Q: How much vegetation does Varthur have in 2025?
+A: {{"status":"ok","task":{{"location":"Varthur","analysis_type":"land_cover","year":2025,"start_year":null,"end_year":null,"parameters":{{}}}},"message":null}}
 
 Q: How did Koramangala change between 2019 and 2024?
 A: {{"status":"ok","task":{{"location":"Koramangala","analysis_type":"change_detection","year":null,"start_year":2019,"end_year":2024,"parameters":{{}}}},"message":null}}

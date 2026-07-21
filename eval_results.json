@@ -1,0 +1,602 @@
+{
+ "summary": {
+  "n": 30,
+  "status_accuracy": 1.0,
+  "numeric_grounding_rate": 0.944,
+  "mean_latency_s": 3.78
+ },
+ "rows": [
+  {
+   "query": "How much did built-up area grow in Jayanagar between 2020 and 2025?",
+   "expected": "ok",
+   "status": "ok",
+   "status_ok": true,
+   "answer": "According to the evidence from the prithvi-eo-2.0-300m-frozen model, which agrees with Dynamic World-derived labels, the built-up area in Jayanagar remained largely the same between 2020 and 2025, with a built-up area of 2.33 km2 in both years, representing 93.5% of the area in 2020 and 93.2% in 2025. The built-up area actually decreased by 0.0051 km2, which is a -0.22% change. The model used imagery from the Jan-Mar window and had a valid pixel rate of 99.9% for both years. The evidence does not provide any additional information on the causes of this change. The location of Jayanagar was analyzed as 1 ward. The model used was the prithvi-eo-2.0-300m-frozen model, version v1-clean.",
+   "cited": [
+    "ward-jayanagar-east",
+    "ward-jayanagar",
+    "coverage",
+    "ward-srinagar"
+   ],
+   "numbers_grounded": true,
+   "ungrounded_numbers": [],
+   "spec": {
+    "location": "Jayanagar",
+    "wards": 1,
+    "analysis": "urban_expansion",
+    "years": [
+     2020,
+     2025
+    ],
+    "notes": []
+   },
+   "latency_s": 1.95
+  },
+  {
+   "query": "Show the built-up map of Bellandur as of 2024.",
+   "expected": "ok",
+   "status": "ok",
+   "status_ok": true,
+   "answer": "The built-up map of Bellandur as of 2024 shows that 71.1% of the area is built-up, which corresponds to 18.86 km2. This information is based on the prithvi-eo-2.0-300m-frozen model, version v1-clean, with an agreement with Dynamic World-derived labels, and was derived from a composite window of January to March. The model has an accuracy of 0.879 for built-up areas, as measured by per-class IoU. The total area of Bellandur is 26.37 km2, with the remaining area consisting of vegetation, water, and background. The vegetation covers 17.4% of the area, water covers 6.8%, and background covers 4.7%. The valid pixels for this analysis are 100.0%.",
+   "cited": [
+    "accuracy-prithvi",
+    "ward-bellanduru",
+    "alias-sarjapur-road",
+    "coverage"
+   ],
+   "numbers_grounded": true,
+   "ungrounded_numbers": [],
+   "spec": {
+    "location": "Bellanduru",
+    "wards": 1,
+    "analysis": "built_up_mapping",
+    "years": [
+     2024
+    ],
+    "notes": []
+   },
+   "latency_s": 1.42
+  },
+  {
+   "query": "Did Kaddugodi lose vegetation from 2019 to 2025?",
+   "expected": "ok",
+   "status": "ok",
+   "status_ok": true,
+   "answer": "NOTES: Interpreted 'Kaddugodi' as ward 'Kadugodi'. \nKaddugodi, as interpreted as ward 'Kadugodi', experienced a change in vegetation from 2019 to 2025, according to the prithvi-eo-2.0-300m-frozen model, which has an agreement with Dynamic World-derived labels of 0.798 for vegetation. The area covered by vegetation decreased from 3.76 km2 in 2019, which accounted for 32.9% of the area, to 2.68 km2 in 2025, which accounted for 23.4% of the area. This indicates a loss of vegetation in the area. The model used for this analysis is the prithvi-eo-2.0-300m-frozen model, with a version of v1-clean, and the imagery window used was Jan-Mar. The vegetation change was -1.0838 km2. The analysis suggests that Kaddugodi did lose vegetation from 2019 to 2025.",
+   "cited": [
+    "accuracy-prithvi",
+    "provenance-model",
+    "ward-kadugodi",
+    "accuracy-segformer"
+   ],
+   "numbers_grounded": true,
+   "ungrounded_numbers": [],
+   "spec": {
+    "location": "Kadugodi",
+    "wards": 1,
+    "analysis": "vegetation_change",
+    "years": [
+     2019,
+     2025
+    ],
+    "notes": [
+     "Interpreted 'Kaddugodi' as ward 'Kadugodi'."
+    ]
+   },
+   "latency_s": 1.63
+  },
+  {
+   "query": "Land cover of HSR Layout in 2024.",
+   "expected": "ok",
+   "status": "ok",
+   "status_ok": true,
+   "answer": "NOTES: 'Hsr Layout' interpreted as ward(s): HSR Layout. \nThe land cover of HSR Layout in 2024 is primarily built-up, covering 5.75 km2, which accounts for 81.5% of the area, as determined by the prithvi-eo-2.0-300m-frozen model, which has an agreement with Dynamic World-derived labels. \nThe model, with a version of v1-clean, analyzed the area within the Jan-Mar composite window and found that vegetation covers 0.96 km2, or 13.6%, and water covers 0.33 km2, or 4.8%. \nThe remaining area, 0.01 km2, or 0.1%, is classified as background. \nThe model's accuracy, as per the prithvi-eo-2.0-300m-frozen model, has an agreement with Dynamic World-derived labels, with a per-class IoU of 0.879 for built-up areas. \nThe analysis is based on 100.0% valid pixels. \nThe osm_footprint_agreement is not available for this analysis. \nThe land cover analysis is in agreement with Dynamic World-derived labels, as determined by the prithvi-eo-2.0-300m-frozen model.",
+   "cited": [
+    "alias-hsr-layout",
+    "alias-hsr",
+    "accuracy-prithvi",
+    "ward-hsr-layout"
+   ],
+   "numbers_grounded": true,
+   "ungrounded_numbers": [],
+   "spec": {
+    "location": "Hsr Layout",
+    "wards": 1,
+    "analysis": "land_cover",
+    "years": [
+     2024
+    ],
+    "notes": [
+     "'Hsr Layout' interpreted as ward(s): HSR Layout"
+    ]
+   },
+   "latency_s": 1.62
+  },
+  {
+   "query": "Built-up change in Hudi between 2019 and 2023.",
+   "expected": "ok",
+   "status": "ok",
+   "status_ok": true,
+   "answer": "The built-up area in Hudi changed between 2019 and 2023, as determined by the prithvi-eo-2.0-300m-frozen model, which has an agreement with Dynamic World-derived labels of 0.879 for built-up areas. In 2019, the built-up area was 12.78 km2, accounting for 82.9% of the area, while in 2023, it was 13.00 km2, accounting for 84.4%. The built-up area increased by 0.22 km2, which represents a 1.72% change. The model used for this analysis is the prithvi-eo-2.0-300m-frozen model, version v1-clean, with a composite window of Jan-Mar. The analysis was based on change detection, and the results are consistent with the label source from Dynamic World-derived supervision. The increase in built-up area suggests a growth in urban development in Hudi between 2019 and 2023.",
+   "cited": [
+    "accuracy-prithvi",
+    "ward-hudi",
+    "alias-hsr",
+    "accuracy-segformer"
+   ],
+   "numbers_grounded": true,
+   "ungrounded_numbers": [],
+   "spec": {
+    "location": "Hudi",
+    "wards": 1,
+    "analysis": "change_detection",
+    "years": [
+     2019,
+     2023
+    ],
+    "notes": []
+   },
+   "latency_s": 1.53
+  },
+  {
+   "query": "How much vegetation does Varthur have in 2025?",
+   "expected": "ok",
+   "status": "ok",
+   "status_ok": true,
+   "answer": "In Varthur, as analyzed by the prithvi-eo-2.0-300m-frozen model, which has an agreement with Dynamic World-derived labels, vegetation covers 8.23 km2, accounting for 30.7% of the area, in the year 2025, based on the Jan-Mar composite window. This analysis is part of the land cover assessment for the location, which also includes built-up, water, and background areas. The model used has a per-class IoU of 0.798 for vegetation, indicating its accuracy in identifying vegetation areas. The total area of Varthur is not explicitly stated in the evidence, but according to the context, the official area of Ward Varthuru is 26.98 sq km. The analysis provides a breakdown of the land cover in Varthur, with vegetation being a significant portion. The evidence does not provide any additional information about the types of vegetation or their distribution within the area.",
+   "cited": [
+    "accuracy-prithvi",
+    "ward-varthuru",
+    "coverage",
+    "provenance-model"
+   ],
+   "numbers_grounded": true,
+   "ungrounded_numbers": [],
+   "spec": {
+    "location": "Varthuru",
+    "wards": 1,
+    "analysis": "land_cover",
+    "years": [
+     2025
+    ],
+    "notes": []
+   },
+   "latency_s": 1.53
+  },
+  {
+   "query": "Urban expansion in Yelahanka Satellite Town from 2019 to 2025.",
+   "expected": "ok",
+   "status": "ok",
+   "status_ok": true,
+   "answer": "In Yelahanka Satellite Town, from 2019 to 2025, the built-up area increased by 0.1086 km2, which is a 2.82% change, as determined by the prithvi-eo-2.0-300m-frozen model, in agreement with Dynamic World-derived labels. The built-up area in 2019 was 3.85 km2, accounting for 78.5% of the area, and in 2025 it was 3.96 km2, accounting for 80.7%. The vegetation area decreased by 0.1182 km2, from 0.84 km2 in 2019 to 0.73 km2 in 2025, representing a change from 17.2% to 14.8% of the area. The water area increased slightly from 0.18 km2 to 0.20 km2, and the background area decreased from 0.03 km2 to 0.02 km2. The analysis was based on imagery from the Jan-Mar window.",
+   "cited": [
+    "ward-yelahanka-satellite-town",
+    "ward-chowdeswari-ward",
+    "ward-kempegowda-ward",
+    "ward-atturu"
+   ],
+   "numbers_grounded": true,
+   "ungrounded_numbers": [],
+   "spec": {
+    "location": "Yelahanka Satellite Town",
+    "wards": 1,
+    "analysis": "urban_expansion",
+    "years": [
+     2019,
+     2025
+    ],
+    "notes": []
+   },
+   "latency_s": 1.73
+  },
+  {
+   "query": "How did Vijnanapura change between 2020 and 2024?",
+   "expected": "ok",
+   "status": "ok",
+   "status_ok": true,
+   "answer": "The location of interest is Vijnanapura, which consists of 1 ward, and the analysis is based on change detection between 2020 and 2024, as agreed with Dynamic World-derived labels, using the prithvi-eo-2.0-300m-frozen model. In 2020, built-up areas accounted for 98.0% of the land, while in 2024, this percentage decreased to 94.6%. The built-up area changed by -0.0701 km2, which corresponds to a -3.48% change. The vegetation area remained relatively stable, with a change of -0.0057 km2. The model used for this analysis, prithvi-eo-2.0-300m-frozen, has an accuracy of 0.714 mIoU, with per-class IoU of 0.879 for built-up areas, as measured against Dynamic World-derived labels. The analysis was conducted using imagery from the Jan-Mar window.",
+   "cited": [
+    "accuracy-prithvi",
+    "ward-vijnanapura",
+    "ward-nagapura",
+    "ward-herohalli"
+   ],
+   "numbers_grounded": true,
+   "ungrounded_numbers": [],
+   "spec": {
+    "location": "Vijnanapura",
+    "wards": 1,
+    "analysis": "change_detection",
+    "years": [
+     2020,
+     2024
+    ],
+    "notes": []
+   },
+   "latency_s": 1.76
+  },
+  {
+   "query": "Urban expansion in Whitefield from 2019 to 2025.",
+   "expected": "ok",
+   "status": "ok",
+   "status_ok": true,
+   "answer": "NOTES: 'Whitefield' interpreted as ward(s): Kadugodi, Hagadur, Garudachar Playa, Hudi. \nThe urban expansion in Whitefield from 2019 to 2025 can be analyzed using the prithvi-eo-2.0-300m-frozen model, which has an agreement with Dynamic World-derived labels of mIoU 0.714. \nIn 2019, built-up areas covered 77.5% of the region, while in 2025, this increased to 83.0%. \nThe built-up area changed by 2.5964 km2, which is a 7.22% increase. \nThe vegetation area decreased by 3.2835 km2 from 9.17 km2 in 2019 to 5.88 km2 in 2025. \nThe model used for this analysis is the prithvi-eo-2.0-300m-frozen model, with a composite window of Jan-Mar. \nThe data suggests that urban expansion has occurred in Whitefield, with a significant increase in built-up areas and a corresponding decrease in vegetation. \nThe accuracy of the model, as measured by its agreement with Dynamic World-derived labels, is 0.714 for the overall area and 0.879 for built-up areas.",
+   "cited": [
+    "accuracy-prithvi",
+    "alias-whitefield",
+    "ward-garudachar-playa",
+    "ward-kadugodi"
+   ],
+   "numbers_grounded": true,
+   "ungrounded_numbers": [],
+   "spec": {
+    "location": "Whitefield",
+    "wards": 4,
+    "analysis": "urban_expansion",
+    "years": [
+     2019,
+     2025
+    ],
+    "notes": [
+     "'Whitefield' interpreted as ward(s): Kadugodi, Hagadur, Garudachar Playa, Hudi"
+    ]
+   },
+   "latency_s": 2.0
+  },
+  {
+   "query": "How has Sarjapur Road changed over the years?",
+   "expected": "ok",
+   "status": "ok",
+   "status_ok": true,
+   "answer": "Sarjapur Road, interpreted as ward(s): Bellanduru, has undergone changes over the years, as seen in the analysis from 2019 to 2025, using the prithvi-eo-2.0-300m-frozen model, which has an agreement with Dynamic World-derived labels of mIoU 0.714. The built-up area has increased by 0.3832 km2, which is a 2.09% change, while the vegetation area has decreased by 0.0512 km2. In 2019, the built-up area was 18.35 km2, accounting for 69.2% of the total area, and the vegetation area was 5.16 km2, accounting for 19.5%. By 2025, the built-up area was 18.73 km2, accounting for 70.6%, and the vegetation area was 5.11 km2, accounting for 19.3%. The water area has also seen changes, with 1.95 km2 in 2019 and 2.07 km2 in 2025. The background area has decreased from 1.05 km2 in 2019 to 0.61 km2 in 2025. The analysis is based on the composite window of Jan-Mar and has a valid pixel percentage of 100.0% for all years.",
+   "cited": [
+    "accuracy-prithvi",
+    "alias-sarjapur-road",
+    "ward-bellanduru",
+    "accuracy-segformer"
+   ],
+   "numbers_grounded": true,
+   "ungrounded_numbers": [],
+   "spec": {
+    "location": "Sarjapur Road",
+    "wards": 1,
+    "analysis": "trend",
+    "years": [
+     2019,
+     2020,
+     2021,
+     2022,
+     2023,
+     2024,
+     2025
+    ],
+    "notes": [
+     "'Sarjapur Road' interpreted as ward(s): Bellanduru"
+    ]
+   },
+   "latency_s": 3.98
+  },
+  {
+   "query": "How has Bellandur changed over the years?",
+   "expected": "ok",
+   "status": "ok",
+   "status_ok": true,
+   "answer": "According to the evidence from the prithvi-eo-2.0-300m-frozen model, which has an agreement with Dynamic World-derived labels of mIoU 0.714, Bellanduru has undergone changes over the years. The built-up area has increased by 0.3832 km2, which is a 2.09% change, from 2019 to 2025. In contrast, the vegetation area has decreased by 0.0512 km2. The water area has fluctuated, with a high of 2.07 km2 in 2025 and a low of 1.13 km2 in 2021. The background area has also varied, with a high of 1.25 km2 in 2024 and a low of 0.61 km2 in 2025. The analysis is based on the composite window of Jan-Mar and the location of Bellanduru, which covers 1 ward. The model's accuracy is reported as per-class IoU background 0.436, vegetation 0.798, water 0.741, and built-up 0.879.",
+   "cited": [
+    "accuracy-prithvi",
+    "ward-bellanduru",
+    "accuracy-segformer",
+    "alias-sarjapur-road"
+   ],
+   "numbers_grounded": true,
+   "ungrounded_numbers": [],
+   "spec": {
+    "location": "Bellanduru",
+    "wards": 1,
+    "analysis": "trend",
+    "years": [
+     2019,
+     2020,
+     2021,
+     2022,
+     2023,
+     2024,
+     2025
+    ],
+    "notes": []
+   },
+   "latency_s": 9.93
+  },
+  {
+   "query": "How much did Bengaluru's built-up area grow between 2019 and 2025?",
+   "expected": "ok",
+   "status": "ok",
+   "status_ok": true,
+   "answer": "The built-up area in Bengaluru grew by 15.996 km2 between 2019 and 2025, which represents a 2.74% increase, as determined by the prithvi-eo-2.0-300m-frozen model, in agreement with Dynamic World-derived labels, using imagery from the Jan-Mar window. In 2019, the built-up area was 584.66 km2, accounting for 82.2% of the area, while in 2025, it was 600.66 km2, making up 84.4% of the area. The analysis covered all 198 wards of the BBMP. The model used for this analysis is the prithvi-eo-2.0-300m-frozen model, version v1-clean. The data indicates a shift from vegetation to built-up areas, with vegetation decreasing by 18.1348 km2. The change in built-up area is based on the analysis of urban expansion in the region.",
+   "cited": [
+    "coverage",
+    "alias-sarjapur-road",
+    "ward-dr.-raj-kumar-ward",
+    "ward-begur"
+   ],
+   "numbers_grounded": true,
+   "ungrounded_numbers": [],
+   "spec": {
+    "location": "BBMP (all 198 wards)",
+    "wards": 198,
+    "analysis": "urban_expansion",
+    "years": [
+     2019,
+     2025
+    ],
+    "notes": []
+   },
+   "latency_s": 7.56
+  },
+  {
+   "query": "Show the city's land cover for 2024.",
+   "expected": "ok",
+   "status": "ok",
+   "status_ok": true,
+   "answer": "The city's land cover for 2024 is composed of built-up areas covering 604.25 km2, which accounts for 84.9% of the land, vegetation covering 82.45 km2, which accounts for 11.6%, water covering 15.38 km2, which accounts for 2.2%, and background covering 9.52 km2, which accounts for 1.3%. This analysis is based on the prithvi-eo-2.0-300m-frozen model, version v1-clean, with an agreement with Dynamic World-derived labels, and covers the 198 wards of BBMP. The model's accuracy on the geographic holdout is measured by an mIoU of 0.714, with per-class IoU of 0.879 for built-up areas, 0.798 for vegetation, 0.741 for water, and 0.436 for background. The imagery window used for this analysis is from January to March. All pixels are reported as valid, at 100.0%.",
+   "cited": [
+    "coverage",
+    "accuracy-prithvi",
+    "ward-begur",
+    "alias-sarjapur-road"
+   ],
+   "numbers_grounded": true,
+   "ungrounded_numbers": [],
+   "spec": {
+    "location": "BBMP (all 198 wards)",
+    "wards": 198,
+    "analysis": "land_cover",
+    "years": [
+     2024
+    ],
+    "notes": []
+   },
+   "latency_s": 6.74
+  },
+  {
+   "query": "Did the city lose vegetation from 2010 to 2024?",
+   "expected": "ok",
+   "status": "ok",
+   "status_ok": true,
+   "answer": "NOTES: The start year was moved from 2010 to 2019 due to consistent Sentinel-2 coverage for Bengaluru beginning in 2019. \nThe city of Bengaluru, as analyzed by the prithvi-eo-2.0-300m-frozen model, with an agreement of 0.714 mIoU with Dynamic World-derived labels, experienced a change in vegetation from 2019 to 2024. \nIn 2019, vegetation covered 103.29 km2, which is 14.5% of the area, and in 2024, it covered 82.45 km2, which is 11.6% of the area. \nThe vegetation change from 2019 to 2024 was -20.8426 km2, indicating a loss of vegetation. \nThe model used for this analysis is the prithvi-eo-2.0-300m-frozen model, version v1-clean, with a composite window of Jan-Mar, and label source from Dynamic World-derived supervision. \nThe data used for this analysis is from the Sentinel-2 era, which covers the years 2019-2025. \nThe city's vegetation area decreased from 14.5% to 11.6% of the total area, showing a loss of vegetation over the 5-year period.",
+   "cited": [
+    "coverage",
+    "accuracy-prithvi",
+    "alias-sarjapur-road",
+    "ward-begur"
+   ],
+   "numbers_grounded": false,
+   "ungrounded_numbers": [
+    "5"
+   ],
+   "spec": {
+    "location": "BBMP (all 198 wards)",
+    "wards": 198,
+    "analysis": "vegetation_change",
+    "years": [
+     2019,
+     2024
+    ],
+    "notes": [
+     "Start year moved from 2010 to 2019. Consistent Sentinel-2 coverage for Bengaluru begins in 2019; the system covers 2019-2025. Requests entirely before 2019 cannot be served from Sentinel-2 data."
+    ]
+   },
+   "latency_s": 7.26
+  },
+  {
+   "query": "Built-up map of HSR Layout in 2030.",
+   "expected": "ok",
+   "status": "ok",
+   "status_ok": true,
+   "answer": "NOTES: 'Hsr Layout' interpreted as ward(s): HSR Layout; 2030 not yet processed; using 2025. \nThe built-up area in HSR Layout in 2025 is 5.73 km2, which accounts for 81.2% of the total area. \nAccording to the prithvi-eo-2.0-300m-frozen model, which has an agreement with Dynamic World-derived labels of 0.879 for built-up areas, the area is largely composed of built-up spaces. \nThe model, with a composite window of Jan-Mar, also reports 0.98 km2 of vegetation and 0.35 km2 of water in the area. \nThe valid pixels account for 100.0% of the area. \nThe locality 'Hsr Layout' is interpreted as ward(s): HSR Layout, with an official area of 6.98 sq km. \nSince 2030 data is not yet processed, we cannot provide the built-up map for that year, and the information for 2025 is being used instead. \nThe accuracy of the model, as measured by agreement with Dynamic World-derived labels, is 0.714 for all classes, with a per-class IoU of 0.879 for built-up areas.",
+   "cited": [
+    "alias-hsr-layout",
+    "alias-hsr",
+    "ward-hsr-layout",
+    "accuracy-prithvi"
+   ],
+   "numbers_grounded": true,
+   "ungrounded_numbers": [],
+   "spec": {
+    "location": "Hsr Layout",
+    "wards": 1,
+    "analysis": "built_up_mapping",
+    "years": [
+     2025
+    ],
+    "notes": [
+     "'Hsr Layout' interpreted as ward(s): HSR Layout",
+     "2030 not yet processed; using 2025."
+    ]
+   },
+   "latency_s": 7.06
+  },
+  {
+   "query": "How has the whole city changed over time?",
+   "expected": "ok",
+   "status": "ok",
+   "status_ok": true,
+   "answer": "The whole city of BBMP, comprising all 198 wards, has undergone changes over time, as observed from 2019 to 2025, using the prithvi-eo-2.0-300m-frozen model, which has an agreement with Dynamic World-derived labels of mIoU 0.714. The built-up area has increased by 15.996 km2, representing a 2.74% change, with the highest built-up area recorded in 2024 at 84.9% of the total area. In contrast, the vegetation area has decreased by 18.1348 km2, with the lowest vegetation area recorded in 2024 at 11.6% of the total area. The water area has fluctuated over the years, with the highest recorded in 2025 at 2.5% of the total area. The background area has also varied, with the lowest recorded in 2021 at 0.9% of the total area. The ndvi_mean_by_year and ndbi_mean_by_year values have also changed over time, indicating shifts in the city's environmental conditions.",
+   "cited": [
+    "coverage",
+    "accuracy-prithvi",
+    "ward-dr.-raj-kumar-ward",
+    "ward-begur"
+   ],
+   "numbers_grounded": true,
+   "ungrounded_numbers": [],
+   "spec": {
+    "location": "BBMP (all 198 wards)",
+    "wards": 198,
+    "analysis": "trend",
+    "years": [
+     2019,
+     2020,
+     2021,
+     2022,
+     2023,
+     2024,
+     2025
+    ],
+    "notes": []
+   },
+   "latency_s": 8.8
+  },
+  {
+   "query": "Land cover of Whitefield, latest imagery.",
+   "expected": "ok",
+   "status": "ok",
+   "status_ok": true,
+   "answer": "NOTES: 'Whitefield' interpreted as ward(s): Kadugodi, Hagadur, Garudachar Playa, Hudi. \nThe land cover of Whitefield, based on the latest imagery from the composite window of Jan-Mar, is primarily built-up, covering 38.53 km2, which accounts for 83.0% of the area. Vegetation covers 5.88 km2, or 12.7%, while water covers 0.92 km2, or 2.0%, and background covers 1.07 km2, or 2.3%. This analysis is based on the prithvi-eo-2.0-300m-frozen model, which has an agreement with Dynamic World-derived labels of mIoU 0.714. The model's per-class IoU for built-up is 0.879, indicating a high level of accuracy for this class. The analysis is for the year 2025, with 100.0% valid pixels. The land cover analysis is in agreement with Dynamic World-derived labels, as determined by the prithvi-eo-2.0-300m-frozen model.",
+   "cited": [
+    "accuracy-prithvi",
+    "alias-whitefield",
+    "accuracy-segformer",
+    "ward-garudachar-playa"
+   ],
+   "numbers_grounded": true,
+   "ungrounded_numbers": [],
+   "spec": {
+    "location": "Whitefield",
+    "wards": 4,
+    "analysis": "land_cover",
+    "years": [
+     2025
+    ],
+    "notes": [
+     "'Whitefield' interpreted as ward(s): Kadugodi, Hagadur, Garudachar Playa, Hudi"
+    ]
+   },
+   "latency_s": 7.66
+  },
+  {
+   "query": "Vegetation change in Hagadur since 2016.",
+   "expected": "ok",
+   "status": "ok",
+   "status_ok": true,
+   "answer": "NOTES: The start year was moved from 2016 to 2019 due to consistent Sentinel-2 coverage for Bengaluru beginning in 2019. \nIn Hagadur, which covers 1 ward, the vegetation area decreased from 2.78 km2 in 2019 to 1.73 km2 in 2025, according to analysis from the prithvi-eo-2.0-300m-frozen model, which has an agreement with Dynamic World-derived labels of 0.798 for vegetation. \nThis represents a decrease of 1.05 km2 in vegetation area, with vegetation making up 21.8% of the area in 2019 and 13.6% in 2025. \nThe model used is the prithvi-eo-2.0-300m-frozen, with a model version of v1-clean, and the imagery window is Jan-Mar. \nThe built-up area increased during this time, from 9.67 km2 to 10.59 km2, while the water area remained relatively stable at 0.30 km2. \nThe mean NDVI values for Hagadur were 0.2961 in 2019 and 0.3076 in 2025. \nThe change in vegetation area is likely due to the increase in built-up area, which increased by 0.92 km2, or 9.49%.",
+   "cited": [
+    "accuracy-prithvi",
+    "provenance-model",
+    "accuracy-segformer",
+    "ward-hagadur"
+   ],
+   "numbers_grounded": true,
+   "ungrounded_numbers": [],
+   "spec": {
+    "location": "Hagadur",
+    "wards": 1,
+    "analysis": "vegetation_change",
+    "years": [
+     2019,
+     2025
+    ],
+    "notes": [
+     "Start year moved from 2016 to 2019. Consistent Sentinel-2 coverage for Bengaluru begins in 2019; the system covers 2019-2025. Requests entirely before 2019 cannot be served from Sentinel-2 data."
+    ]
+   },
+   "latency_s": 7.87
+  },
+  {
+   "query": "Show me the changes in Hebbal.",
+   "expected": "clarify",
+   "status": "clarify",
+   "status_ok": true,
+   "message": "Which years should I compare for Hebbal? For example 2019 to 2025.",
+   "latency_s": 3.52
+  },
+  {
+   "query": "Analyze urban growth.",
+   "expected": "clarify",
+   "status": "clarify",
+   "status_ok": true,
+   "message": "Please name a place (a BBMP ward, a locality like Whitefield, or the whole city) and the years, e.g. 'urban growth in Yelahanka from 2019 to 2025'.",
+   "latency_s": 2.6
+  },
+  {
+   "query": "How fast is the city growing?",
+   "expected": "clarify",
+   "status": "clarify",
+   "status_ok": true,
+   "message": "Please specify the type of growth (e.g., built-up area, urban expansion, vegetation change) and the years for comparison, e.g., 'urban expansion in the city from 2010 to 2025'.",
+   "latency_s": 2.65
+  },
+  {
+   "query": "Compare two wards.",
+   "expected": "clarify",
+   "status": "clarify",
+   "status_ok": true,
+   "message": "Please specify the wards to compare, the type of analysis (built-up mapping, land cover, change detection, urban expansion, vegetation change, or trend), and the years for comparison.",
+   "latency_s": 2.65
+  },
+  {
+   "query": "What happened in 2024?",
+   "expected": "clarify",
+   "status": "clarify",
+   "status_ok": true,
+   "message": "Please specify the location (like Koramangala or the city) and the type of analysis (built-up mapping, land cover, change detection, urban expansion, vegetation change, or trend) for 2024.",
+   "latency_s": 1.73
+  },
+  {
+   "query": "Compare urban expansion in Mysuru between 2020 and 2025.",
+   "expected": "rejected",
+   "status": "rejected",
+   "status_ok": true,
+   "message": "'Mysuru' is not a BBMP ward, known locality, or region term. Coverage is the 198 BBMP wards.",
+   "latency_s": 2.45
+  },
+  {
+   "query": "Built-up map of Electronic City in 2024.",
+   "expected": "rejected",
+   "status": "rejected",
+   "status_ok": true,
+   "message": "Electronic City lies largely outside BBMP's 198-ward boundary (Anekal taluk). It is not covered by the ward-based analysis.",
+   "latency_s": 3.57
+  },
+  {
+   "query": "Land cover of Mumbai in 2024.",
+   "expected": "rejected",
+   "status": "rejected",
+   "status_ok": true,
+   "message": "'Mumbai' is not a BBMP ward, known locality, or region term. Coverage is the 198 BBMP wards.",
+   "latency_s": 1.41
+  },
+  {
+   "query": "How did Jayanagar change between 2005 and 2012?",
+   "expected": "rejected",
+   "status": "rejected",
+   "status_ok": true,
+   "message": "Consistent Sentinel-2 coverage for Bengaluru begins in 2019; the system covers 2019-2025. Requests entirely before 2019 cannot be served from Sentinel-2 data.",
+   "latency_s": 3.48
+  },
+  {
+   "query": "What's the flood risk in Whitefield?",
+   "expected": "rejected",
+   "status": "rejected",
+   "status_ok": true,
+   "message": "Flood risk analysis is not supported. Available: built-up mapping, land cover, change detection, urban expansion, vegetation change, and multi-year trends.",
+   "latency_s": 2.55
+  },
+  {
+   "query": "How bad is traffic on Sarjapur Road?",
+   "expected": "rejected",
+   "status": "rejected",
+   "status_ok": true,
+   "message": "Traffic analysis is not supported. Available: built-up mapping, land cover, change detection, urban expansion, vegetation change, and multi-year trends.",
+   "latency_s": 3.36
+  },
+  {
+   "query": "Property price trends in HSR Layout.",
+   "expected": "rejected",
+   "status": "rejected",
+   "status_ok": true,
+   "message": "Property price analysis is not supported. Available: built-up mapping, land cover, change detection, urban expansion, vegetation change, and multi-year trends.",
+   "latency_s": 1.54
+  }
+ ]
+}

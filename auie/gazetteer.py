@@ -60,7 +60,7 @@ KNOWN_OUTSIDE: dict[str, str] = {
 
 REGION_TERMS = {
     "bengaluru", "bangalore", "bbmp", "the city", "city", "whole city",
-    "city-wide", "citywide", "all wards",
+    "city-wide", "citywide", "all wards", "the whole city", "entire city", "whole of bengaluru",
 }
 
 _FUZZY_CUTOFF = 0.82

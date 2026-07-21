@@ -1,0 +1,17 @@
+{
+ "test/loss": 0.23874248564243317,
+ "test/Accuracy": 0.908000111579895,
+ "test/Boundary_mIoU": 0.35022926330566406,
+ "test/Class_Accuracy_0": 0.8416643738746643,
+ "test/Class_Accuracy_1": 0.9109095335006714,
+ "test/Class_Accuracy_2": 0.9695022702217102,
+ "test/Class_Accuracy_3": 0.9099240899085999,
+ "test/F1_Score": 0.8204565048217773,
+ "test/IoU_0": 0.43608760833740234,
+ "test/IoU_1": 0.7978167533874512,
+ "test/IoU_2": 0.740849494934082,
+ "test/IoU_3": 0.8793874382972717,
+ "test/Pixel_Accuracy": 0.9103732705116272,
+ "test/mIoU": 0.7135353088378906,
+ "test/mIoU_Micro": 0.8354910016059875
+}
