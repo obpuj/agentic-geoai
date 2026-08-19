@@ -1,0 +1,15 @@
+{
+ "model": "prithvi-eo-2.0-300m-frozen",
+ "model_version": "v1-clean",
+ "composite_window": "Jan-Mar",
+ "label_source": "Dynamic World-derived supervision",
+ "years_processed": [
+  2019,
+  2020,
+  2021,
+  2022,
+  2023,
+  2024,
+  2025
+ ]
+}

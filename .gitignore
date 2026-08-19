@@ -7,12 +7,9 @@ __pycache__/
 .env.*
 .DS_Store
 chips/
-data/
+composites/
+chips.zip
 # large data / model artifacts — kept locally and on Kaggle/Drive, not in git
-*.tif
 *.zip
 *.ckpt
 *.pt
-composites/
-chips.zip
-BBMP_oldWards.geojson
