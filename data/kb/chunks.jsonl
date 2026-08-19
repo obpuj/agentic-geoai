@@ -1,0 +1,207 @@
+{"id": "provenance-model", "text": "Analysis rasters were produced by prithvi-eo-2.0-300m-frozen (version v1-clean) from Sentinel-2 Jan-Mar dry-season median composites, years [2019, 2020, 2021, 2022, 2023, 2024, 2025]. Supervision: Dynamic World-derived supervision. Class scheme: 0 background/bare, 1 vegetation, 2 waterbody, 3 built-up, at 10 m resolution.", "meta": {"kind": "provenance"}}
+{"id": "accuracy-prithvi", "text": "Deployed model accuracy on the geographic holdout (agreement with Dynamic World-derived labels): mIoU 0.714; per-class IoU background 0.436, vegetation 0.798, water 0.741, built-up 0.879. These measure agreement with product-derived labels, not ground truth.", "meta": {"kind": "accuracy", "model": "prithvi"}}
+{"id": "accuracy-segformer", "text": "Benchmark comparison: SegFormer MiT-B0 (7-band, ImageNet init) scored mIoU 0.672 on the same holdout (background 0.333, vegetation 0.784, water 0.717, built-up 0.853); the deployed Prithvi model scored higher on all four classes.", "meta": {"kind": "accuracy", "model": "segformer"}}
+{"id": "coverage", "text": "Spatial coverage: the 198 BBMP wards of Bengaluru. Temporal coverage: annual epochs 2019-2025 (Sentinel-2 era; earlier years are not servable). Electronic City lies largely outside the BBMP boundary and is not covered.", "meta": {"kind": "coverage"}}
+{"id": "ward-chowdeswari-ward", "text": "Ward Chowdeswari Ward: official area 7.06 sq km, assembly constituency Yelahanka.", "meta": {"kind": "ward", "ward": "Chowdeswari Ward"}}
+{"id": "ward-atturu", "text": "Ward Atturu: official area 10.15 sq km, assembly constituency Yelahanka.", "meta": {"kind": "ward", "ward": "Atturu"}}
+{"id": "ward-yelahanka-satellite-town", "text": "Ward Yelahanka Satellite Town: official area 4.90 sq km, assembly constituency Yelahanka.", "meta": {"kind": "ward", "ward": "Yelahanka Satellite Town"}}
+{"id": "ward-vijnanapura", "text": "Ward Vijnanapura: official area 2.05 sq km, assembly constituency K.R. Puram.", "meta": {"kind": "ward", "ward": "Vijnanapura"}}
+{"id": "ward-basavanapura", "text": "Ward Basavanapura: official area 6.28 sq km, assembly constituency K.R. Puram.", "meta": {"kind": "ward", "ward": "Basavanapura"}}
+{"id": "ward-hudi", "text": "Ward Hudi: official area 15.30 sq km, assembly constituency K.R. Puram.", "meta": {"kind": "ward", "ward": "Hudi"}}
+{"id": "ward-devasandra", "text": "Ward Devasandra: official area 3.52 sq km, assembly constituency K.R. Puram.", "meta": {"kind": "ward", "ward": "Devasandra"}}
+{"id": "ward-a-narayanapura", "text": "Ward A Narayanapura: official area 2.15 sq km, assembly constituency K.R. Puram.", "meta": {"kind": "ward", "ward": "A Narayanapura"}}
+{"id": "ward-vijnana-nagar", "text": "Ward Vijnana Nagar: official area 5.73 sq km, assembly constituency K.R. Puram.", "meta": {"kind": "ward", "ward": "Vijnana Nagar"}}
+{"id": "ward-hal-airport", "text": "Ward HAL Airport: official area 6.80 sq km, assembly constituency K.R. Puram.", "meta": {"kind": "ward", "ward": "HAL Airport"}}
+{"id": "ward-dodda-bommasandra", "text": "Ward Dodda Bommasandra: official area 4.20 sq km, assembly constituency Byatarayanapura.", "meta": {"kind": "ward", "ward": "Dodda Bommasandra"}}
+{"id": "ward-kuvempu-nagar", "text": "Ward Kuvempu Nagar: official area 7.59 sq km, assembly constituency Byatarayanapura.", "meta": {"kind": "ward", "ward": "Kuvempu Nagar"}}
+{"id": "ward-jakkuru", "text": "Ward Jakkuru: official area 23.96 sq km, assembly constituency Byatarayanapura.", "meta": {"kind": "ward", "ward": "Jakkuru"}}
+{"id": "ward-thanisandra", "text": "Ward Thanisandra: official area 9.97 sq km, assembly constituency Byatarayanapura.", "meta": {"kind": "ward", "ward": "Thanisandra"}}
+{"id": "ward-byatarayanapura", "text": "Ward Byatarayanapura: official area 9.60 sq km, assembly constituency Byatarayanapura.", "meta": {"kind": "ward", "ward": "Byatarayanapura"}}
+{"id": "ward-kodigehalli", "text": "Ward Kodigehalli: official area 3.81 sq km, assembly constituency Byatarayanapura.", "meta": {"kind": "ward", "ward": "Kodigehalli"}}
+{"id": "ward-vidyaranyapura", "text": "Ward Vidyaranyapura: official area 9.79 sq km, assembly constituency Byatarayanapura.", "meta": {"kind": "ward", "ward": "Vidyaranyapura"}}
+{"id": "ward-ullalu", "text": "Ward Ullalu: official area 8.92 sq km, assembly constituency Yeshwantpura.", "meta": {"kind": "ward", "ward": "Ullalu"}}
+{"id": "ward-kengeri", "text": "Ward Kengeri: official area 4.77 sq km, assembly constituency Yeshwantpura.", "meta": {"kind": "ward", "ward": "Kengeri"}}
+{"id": "ward-dodda-bidarakallu", "text": "Ward Dodda Bidarakallu: official area 12.70 sq km, assembly constituency Yeshwantpura.", "meta": {"kind": "ward", "ward": "Dodda Bidarakallu"}}
+{"id": "ward-herohalli", "text": "Ward Herohalli: official area 7.70 sq km, assembly constituency Yeshwantpura.", "meta": {"kind": "ward", "ward": "Herohalli"}}
+{"id": "ward-jalahalli", "text": "Ward Jalahalli: official area 5.16 sq km, assembly constituency Rajarajeswari Nagar.", "meta": {"kind": "ward", "ward": "Jalahalli"}}
+{"id": "ward-rajarajeshwari-nagar", "text": "Ward Rajarajeshwari Nagar: official area 11.35 sq km, assembly constituency Rajarajeswari Nagar.", "meta": {"kind": "ward", "ward": "Rajarajeshwari Nagar"}}
+{"id": "ward-j-p-park", "text": "Ward J P Park: official area 2.05 sq km, assembly constituency Rajarajeswari Nagar.", "meta": {"kind": "ward", "ward": "J P Park"}}
+{"id": "ward-yeshwanthpura", "text": "Ward Yeshwanthpura: official area 0.78 sq km, assembly constituency Rajarajeswari Nagar.", "meta": {"kind": "ward", "ward": "Yeshwanthpura"}}
+{"id": "ward-hmt-ward", "text": "Ward HMT Ward: official area 5.21 sq km, assembly constituency Rajarajeswari Nagar.", "meta": {"kind": "ward", "ward": "HMT Ward"}}
+{"id": "ward-lakshmi-devi-nagar", "text": "Ward Lakshmi Devi Nagar: official area 1.33 sq km, assembly constituency Rajarajeswari Nagar.", "meta": {"kind": "ward", "ward": "Lakshmi Devi Nagar"}}
+{"id": "ward-laggere", "text": "Ward Laggere: official area 1.58 sq km, assembly constituency Rajarajeswari Nagar.", "meta": {"kind": "ward", "ward": "Laggere"}}
+{"id": "ward-kottegepalya", "text": "Ward Kottegepalya: official area 5.84 sq km, assembly constituency Rajarajeswari Nagar.", "meta": {"kind": "ward", "ward": "Kottegepalya"}}
+{"id": "ward-shettihalli", "text": "Ward Shettihalli: official area 8.97 sq km, assembly constituency Dasarahalli.", "meta": {"kind": "ward", "ward": "Shettihalli"}}
+{"id": "ward-mallasandra", "text": "Ward Mallasandra: official area 1.31 sq km, assembly constituency Dasarahalli.", "meta": {"kind": "ward", "ward": "Mallasandra"}}
+{"id": "ward-bagalakunte", "text": "Ward Bagalakunte: official area 4.43 sq km, assembly constituency Dasarahalli.", "meta": {"kind": "ward", "ward": "Bagalakunte"}}
+{"id": "ward-t-dasarahalli", "text": "Ward T Dasarahalli: official area 0.88 sq km, assembly constituency Dasarahalli.", "meta": {"kind": "ward", "ward": "T Dasarahalli"}}
+{"id": "ward-chokkasandra", "text": "Ward Chokkasandra: official area 4.00 sq km, assembly constituency Dasarahalli.", "meta": {"kind": "ward", "ward": "Chokkasandra"}}
+{"id": "ward-peenya-industrial-area", "text": "Ward Peenya Industrial Area: official area 5.59 sq km, assembly constituency Dasarahalli.", "meta": {"kind": "ward", "ward": "Peenya Industrial Area"}}
+{"id": "ward-rajagopal-nagar", "text": "Ward Rajagopal Nagar: official area 2.18 sq km, assembly constituency Dasarahalli.", "meta": {"kind": "ward", "ward": "Rajagopal Nagar"}}
+{"id": "ward-hegganahalli", "text": "Ward Hegganahalli: official area 1.96 sq km, assembly constituency Dasarahalli.", "meta": {"kind": "ward", "ward": "Hegganahalli"}}
+{"id": "ward-vrisabhavathi-nagar", "text": "Ward Vrisabhavathi Nagar: official area 0.99 sq km, assembly constituency Mahalakshmi Layout.", "meta": {"kind": "ward", "ward": "Vrisabhavathi Nagar"}}
+{"id": "ward-nandini-layout", "text": "Ward Nandini Layout: official area 1.41 sq km, assembly constituency Mahalakshmi Layout.", "meta": {"kind": "ward", "ward": "Nandini Layout"}}
+{"id": "ward-marappana-palya", "text": "Ward Marappana Palya: official area 2.05 sq km, assembly constituency Mahalakshmi Layout.", "meta": {"kind": "ward", "ward": "Marappana Palya"}}
+{"id": "ward-nagapura", "text": "Ward Nagapura: official area 1.79 sq km, assembly constituency Mahalakshmi Layout.", "meta": {"kind": "ward", "ward": "Nagapura"}}
+{"id": "ward-mahalakshimpuram", "text": "Ward Mahalakshimpuram: official area 0.95 sq km, assembly constituency Mahalakshmi Layout.", "meta": {"kind": "ward", "ward": "Mahalakshimpuram"}}
+{"id": "ward-shakthi-ganapathi-nagar", "text": "Ward Shakthi Ganapathi Nagar: official area 0.70 sq km, assembly constituency Mahalakshmi Layout.", "meta": {"kind": "ward", "ward": "Shakthi Ganapathi Nagar"}}
+{"id": "ward-shankar-matt", "text": "Ward Shankar Matt: official area 1.08 sq km, assembly constituency Mahalakshmi Layout.", "meta": {"kind": "ward", "ward": "Shankar Matt"}}
+{"id": "ward-aramane-nagara", "text": "Ward Aramane Nagara: official area 7.47 sq km, assembly constituency Malleswaram.", "meta": {"kind": "ward", "ward": "Aramane Nagara"}}
+{"id": "ward-mattikere", "text": "Ward Mattikere: official area 0.91 sq km, assembly constituency Malleswaram.", "meta": {"kind": "ward", "ward": "Mattikere"}}
+{"id": "ward-malleswaram", "text": "Ward Malleswaram: official area 1.81 sq km, assembly constituency Malleswaram.", "meta": {"kind": "ward", "ward": "Malleswaram"}}
+{"id": "ward-rajamahal-guttahalli", "text": "Ward Rajamahal Guttahalli: official area 0.73 sq km, assembly constituency Malleswaram.", "meta": {"kind": "ward", "ward": "Rajamahal Guttahalli"}}
+{"id": "ward-kadu-malleshwar-ward", "text": "Ward Kadu Malleshwar Ward: official area 1.36 sq km, assembly constituency Malleswaram.", "meta": {"kind": "ward", "ward": "Kadu Malleshwar Ward"}}
+{"id": "ward-subramanya-nagar", "text": "Ward Subramanya Nagar: official area 0.94 sq km, assembly constituency Malleswaram.", "meta": {"kind": "ward", "ward": "Subramanya Nagar"}}
+{"id": "ward-gayithri-nagar", "text": "Ward Gayithri Nagar: official area 0.64 sq km, assembly constituency Malleswaram.", "meta": {"kind": "ward", "ward": "Gayithri Nagar"}}
+{"id": "ward-radhakrishna-temple-ward", "text": "Ward Radhakrishna Temple Ward: official area 1.95 sq km, assembly constituency Hebbal.", "meta": {"kind": "ward", "ward": "Radhakrishna Temple Ward"}}
+{"id": "ward-sanjaya-nagar", "text": "Ward Sanjaya Nagar: official area 1.54 sq km, assembly constituency Hebbal.", "meta": {"kind": "ward", "ward": "Sanjaya Nagar"}}
+{"id": "ward-ganga-nagar", "text": "Ward Ganga Nagar: official area 2.26 sq km, assembly constituency Hebbal.", "meta": {"kind": "ward", "ward": "Ganga Nagar"}}
+{"id": "ward-hebbala", "text": "Ward Hebbala: official area 1.23 sq km, assembly constituency Hebbal.", "meta": {"kind": "ward", "ward": "Hebbala"}}
+{"id": "ward-vishwanath-nagenahalli", "text": "Ward Vishwanath Nagenahalli: official area 1.47 sq km, assembly constituency Hebbal.", "meta": {"kind": "ward", "ward": "Vishwanath Nagenahalli"}}
+{"id": "ward-manorayanapalya", "text": "Ward Manorayanapalya: official area 0.81 sq km, assembly constituency Hebbal.", "meta": {"kind": "ward", "ward": "Manorayanapalya"}}
+{"id": "ward-gangenahalli", "text": "Ward Gangenahalli: official area 1.09 sq km, assembly constituency Hebbal.", "meta": {"kind": "ward", "ward": "Gangenahalli"}}
+{"id": "ward-jayachamarajendra-nagar", "text": "Ward Jayachamarajendra Nagar: official area 0.89 sq km, assembly constituency Hebbal.", "meta": {"kind": "ward", "ward": "Jayachamarajendra Nagar"}}
+{"id": "ward-kushal-nagar", "text": "Ward Kushal Nagar: official area 0.65 sq km, assembly constituency Pulakeshi Nagar (SC).", "meta": {"kind": "ward", "ward": "Kushal Nagar"}}
+{"id": "ward-kaval-bairasandra", "text": "Ward Kaval Bairasandra: official area 1.59 sq km, assembly constituency Pulakeshi Nagar (SC).", "meta": {"kind": "ward", "ward": "Kaval Bairasandra"}}
+{"id": "ward-devara-jeevanahalli", "text": "Ward Devara Jeevanahalli: official area 1.37 sq km, assembly constituency Pulakeshi Nagar (SC).", "meta": {"kind": "ward", "ward": "Devara Jeevanahalli"}}
+{"id": "ward-muneshwara-nagar", "text": "Ward Muneshwara Nagar: official area 0.48 sq km, assembly constituency Pulakeshi Nagar (SC).", "meta": {"kind": "ward", "ward": "Muneshwara Nagar"}}
+{"id": "ward-sagayarapuram", "text": "Ward Sagayarapuram: official area 0.77 sq km, assembly constituency Pulakeshi Nagar (SC).", "meta": {"kind": "ward", "ward": "Sagayarapuram"}}
+{"id": "ward-s-k-garden", "text": "Ward S K Garden: official area 1.31 sq km, assembly constituency Pulakeshi Nagar (SC).", "meta": {"kind": "ward", "ward": "S K Garden"}}
+{"id": "ward-pulikeshinagar", "text": "Ward Pulikeshinagar: official area 1.72 sq km, assembly constituency Pulakeshi Nagar (SC).", "meta": {"kind": "ward", "ward": "Pulikeshinagar"}}
+{"id": "ward-nagavara", "text": "Ward Nagavara: official area 2.06 sq km, assembly constituency Sarvagna Nagar.", "meta": {"kind": "ward", "ward": "Nagavara"}}
+{"id": "ward-hbr-layout", "text": "Ward HBR Layout: official area 4.64 sq km, assembly constituency Sarvagna Nagar.", "meta": {"kind": "ward", "ward": "HBR Layout"}}
+{"id": "ward-banasavadi", "text": "Ward Banasavadi: official area 3.46 sq km, assembly constituency Sarvagna Nagar.", "meta": {"kind": "ward", "ward": "Banasavadi"}}
+{"id": "ward-kammanahalli", "text": "Ward Kammanahalli: official area 1.03 sq km, assembly constituency Sarvagna Nagar.", "meta": {"kind": "ward", "ward": "Kammanahalli"}}
+{"id": "ward-kacharkanahalli", "text": "Ward Kacharkanahalli: official area 1.72 sq km, assembly constituency Sarvagna Nagar.", "meta": {"kind": "ward", "ward": "Kacharkanahalli"}}
+{"id": "ward-kadugondanahalli", "text": "Ward Kadugondanahalli: official area 0.71 sq km, assembly constituency Sarvagna Nagar.", "meta": {"kind": "ward", "ward": "Kadugondanahalli"}}
+{"id": "ward-lingarajapura", "text": "Ward Lingarajapura: official area 0.89 sq km, assembly constituency Sarvagna Nagar.", "meta": {"kind": "ward", "ward": "Lingarajapura"}}
+{"id": "ward-maruthi-seva-nagar", "text": "Ward Maruthi Seva Nagar: official area 2.37 sq km, assembly constituency Sarvagna Nagar.", "meta": {"kind": "ward", "ward": "Maruthi Seva Nagar"}}
+{"id": "ward-konena-agrahara", "text": "Ward Konena Agrahara: official area 2.12 sq km, assembly constituency C.V. Ramannagar (SC).", "meta": {"kind": "ward", "ward": "Konena Agrahara"}}
+{"id": "ward-benniganahalli", "text": "Ward Benniganahalli: official area 4.92 sq km, assembly constituency C.V. Ramannagar (SC).", "meta": {"kind": "ward", "ward": "Benniganahalli"}}
+{"id": "ward-c-v-raman-nagar", "text": "Ward C V Raman Nagar: official area 3.58 sq km, assembly constituency C.V. Ramannagar (SC).", "meta": {"kind": "ward", "ward": "C V Raman Nagar"}}
+{"id": "ward-new-tippasandara", "text": "Ward New Tippasandara: official area 3.34 sq km, assembly constituency C.V. Ramannagar (SC).", "meta": {"kind": "ward", "ward": "New Tippasandara"}}
+{"id": "ward-sarvagna-nagar", "text": "Ward Sarvagna Nagar: official area 3.66 sq km, assembly constituency C.V. Ramannagar (SC).", "meta": {"kind": "ward", "ward": "Sarvagna Nagar"}}
+{"id": "ward-hoysala-nagar", "text": "Ward Hoysala Nagar: official area 2.05 sq km, assembly constituency C.V. Ramannagar (SC).", "meta": {"kind": "ward", "ward": "Hoysala Nagar"}}
+{"id": "ward-jeevanbhima-nagar", "text": "Ward Jeevanbhima Nagar: official area 1.89 sq km, assembly constituency C.V. Ramannagar (SC).", "meta": {"kind": "ward", "ward": "Jeevanbhima Nagar"}}
+{"id": "ward-sampangiram-nagar", "text": "Ward Sampangiram Nagar: official area 4.45 sq km, assembly constituency Shivaji Nagar.", "meta": {"kind": "ward", "ward": "Sampangiram Nagar"}}
+{"id": "ward-ramaswamy-palya", "text": "Ward Ramaswamy Palya: official area 0.83 sq km, assembly constituency Shivaji Nagar.", "meta": {"kind": "ward", "ward": "Ramaswamy Palya"}}
+{"id": "ward-jayamahal", "text": "Ward Jayamahal: official area 1.44 sq km, assembly constituency Shivaji Nagar.", "meta": {"kind": "ward", "ward": "Jayamahal"}}
+{"id": "ward-halsoor", "text": "Ward Halsoor: official area 1.68 sq km, assembly constituency Shivaji Nagar.", "meta": {"kind": "ward", "ward": "Halsoor"}}
+{"id": "ward-bharathi-nagar", "text": "Ward Bharathi Nagar: official area 0.78 sq km, assembly constituency Shivaji Nagar.", "meta": {"kind": "ward", "ward": "Bharathi Nagar"}}
+{"id": "ward-shivaji-nagar", "text": "Ward Shivaji Nagar: official area 0.43 sq km, assembly constituency Shivaji Nagar.", "meta": {"kind": "ward", "ward": "Shivaji Nagar"}}
+{"id": "ward-vasanth-nagar", "text": "Ward Vasanth Nagar: official area 3.12 sq km, assembly constituency Shivaji Nagar.", "meta": {"kind": "ward", "ward": "Vasanth Nagar"}}
+{"id": "ward-shantala-nagar", "text": "Ward Shantala Nagar: official area 3.99 sq km, assembly constituency Shanthi Nagar.", "meta": {"kind": "ward", "ward": "Shantala Nagar"}}
+{"id": "ward-domlur", "text": "Ward Domlur: official area 1.75 sq km, assembly constituency Shanthi Nagar.", "meta": {"kind": "ward", "ward": "Domlur"}}
+{"id": "ward-agaram", "text": "Ward Agaram: official area 11.26 sq km, assembly constituency Shanthi Nagar.", "meta": {"kind": "ward", "ward": "Agaram"}}
+{"id": "ward-vannarpet", "text": "Ward Vannarpet: official area 0.74 sq km, assembly constituency Shanthi Nagar.", "meta": {"kind": "ward", "ward": "Vannarpet"}}
+{"id": "ward-nilasandra", "text": "Ward Nilasandra: official area 0.54 sq km, assembly constituency Shanthi Nagar.", "meta": {"kind": "ward", "ward": "Nilasandra"}}
+{"id": "ward-shanthi-nagar", "text": "Ward Shanthi Nagar: official area 2.70 sq km, assembly constituency Shanthi Nagar.", "meta": {"kind": "ward", "ward": "Shanthi Nagar"}}
+{"id": "ward-jogupalya", "text": "Ward Jogupalya: official area 0.91 sq km, assembly constituency Shanthi Nagar.", "meta": {"kind": "ward", "ward": "Jogupalya"}}
+{"id": "ward-chickpete", "text": "Ward Chickpete: official area 0.71 sq km, assembly constituency Gandhi Nagar.", "meta": {"kind": "ward", "ward": "Chickpete"}}
+{"id": "ward-cottonpete", "text": "Ward Cottonpete: official area 0.76 sq km, assembly constituency Gandhi Nagar.", "meta": {"kind": "ward", "ward": "Cottonpete"}}
+{"id": "ward-binnipete", "text": "Ward Binnipete: official area 0.77 sq km, assembly constituency Gandhi Nagar.", "meta": {"kind": "ward", "ward": "Binnipete"}}
+{"id": "ward-dattatreya-temple", "text": "Ward Dattatreya Temple: official area 0.71 sq km, assembly constituency Gandhi Nagar.", "meta": {"kind": "ward", "ward": "Dattatreya Temple"}}
+{"id": "ward-gandhinagar", "text": "Ward Gandhinagar: official area 1.93 sq km, assembly constituency Gandhi Nagar.", "meta": {"kind": "ward", "ward": "Gandhinagar"}}
+{"id": "ward-subhash-nagar", "text": "Ward Subhash Nagar: official area 1.32 sq km, assembly constituency Gandhi Nagar.", "meta": {"kind": "ward", "ward": "Subhash Nagar"}}
+{"id": "ward-okalipuram", "text": "Ward Okalipuram: official area 0.83 sq km, assembly constituency Gandhi Nagar.", "meta": {"kind": "ward", "ward": "Okalipuram"}}
+{"id": "ward-basaveshwara-nagar", "text": "Ward Basaveshwara Nagar: official area 0.84 sq km, assembly constituency Rajaji Nagar.", "meta": {"kind": "ward", "ward": "Basaveshwara Nagar"}}
+{"id": "ward-kamakshipalya", "text": "Ward Kamakshipalya: official area 0.91 sq km, assembly constituency Rajaji Nagar.", "meta": {"kind": "ward", "ward": "Kamakshipalya"}}
+{"id": "ward-shivanagara", "text": "Ward Shivanagara: official area 0.78 sq km, assembly constituency Rajaji Nagar.", "meta": {"kind": "ward", "ward": "Shivanagara"}}
+{"id": "ward-sriramamandir", "text": "Ward Sriramamandir: official area 1.06 sq km, assembly constituency Rajaji Nagar.", "meta": {"kind": "ward", "ward": "Sriramamandir"}}
+{"id": "ward-dayananda-nagar", "text": "Ward Dayananda Nagar: official area 0.45 sq km, assembly constituency Rajaji Nagar.", "meta": {"kind": "ward", "ward": "Dayananda Nagar"}}
+{"id": "ward-prakash-nagar", "text": "Ward Prakash Nagar: official area 0.56 sq km, assembly constituency Rajaji Nagar.", "meta": {"kind": "ward", "ward": "Prakash Nagar"}}
+{"id": "ward-rajaji-nagar", "text": "Ward Rajaji Nagar: official area 0.86 sq km, assembly constituency Rajaji Nagar.", "meta": {"kind": "ward", "ward": "Rajaji Nagar"}}
+{"id": "ward-kaveripura", "text": "Ward Kaveripura: official area 1.64 sq km, assembly constituency Govindaraja Nagar.", "meta": {"kind": "ward", "ward": "Kaveripura"}}
+{"id": "ward-govindaraja-nagar", "text": "Ward Govindaraja Nagar: official area 0.77 sq km, assembly constituency Govindaraja Nagar.", "meta": {"kind": "ward", "ward": "Govindaraja Nagar"}}
+{"id": "ward-agrahara-dasarahalli", "text": "Ward Agrahara Dasarahalli: official area 0.80 sq km, assembly constituency Govindaraja Nagar.", "meta": {"kind": "ward", "ward": "Agrahara Dasarahalli"}}
+{"id": "ward-dr.-raj-kumar-ward", "text": "Ward Dr. Raj Kumar Ward: official area 0.99 sq km, assembly constituency Govindaraja Nagar.", "meta": {"kind": "ward", "ward": "Dr. Raj Kumar Ward"}}
+{"id": "ward-marenahalli", "text": "Ward Marenahalli: official area 0.69 sq km, assembly constituency Govindaraja Nagar.", "meta": {"kind": "ward", "ward": "Marenahalli"}}
+{"id": "ward-maruthi-mandir-ward", "text": "Ward Maruthi Mandir ward: official area 0.79 sq km, assembly constituency Govindaraja Nagar.", "meta": {"kind": "ward", "ward": "Maruthi Mandir ward"}}
+{"id": "ward-mudalapalya", "text": "Ward Mudalapalya: official area 0.98 sq km, assembly constituency Govindaraja Nagar.", "meta": {"kind": "ward", "ward": "Mudalapalya"}}
+{"id": "ward-nagarabhavi", "text": "Ward Nagarabhavi: official area 1.60 sq km, assembly constituency Govindaraja Nagar.", "meta": {"kind": "ward", "ward": "Nagarabhavi"}}
+{"id": "ward-nayandahalli", "text": "Ward Nayandahalli: official area 2.07 sq km, assembly constituency Govindaraja Nagar.", "meta": {"kind": "ward", "ward": "Nayandahalli"}}
+{"id": "ward-kempapura-agrahara", "text": "Ward Kempapura Agrahara: official area 0.36 sq km, assembly constituency Vijaya Nagar.", "meta": {"kind": "ward", "ward": "Kempapura Agrahara"}}
+{"id": "ward-vijayanagar", "text": "Ward Vijayanagar: official area 0.73 sq km, assembly constituency Vijaya Nagar.", "meta": {"kind": "ward", "ward": "Vijayanagar"}}
+{"id": "ward-hosahalli", "text": "Ward Hosahalli: official area 0.89 sq km, assembly constituency Vijaya Nagar.", "meta": {"kind": "ward", "ward": "Hosahalli"}}
+{"id": "ward-attiguppe", "text": "Ward Attiguppe: official area 1.39 sq km, assembly constituency Vijaya Nagar.", "meta": {"kind": "ward", "ward": "Attiguppe"}}
+{"id": "ward-hampi-nagar", "text": "Ward Hampi Nagar: official area 1.11 sq km, assembly constituency Vijaya Nagar.", "meta": {"kind": "ward", "ward": "Hampi Nagar"}}
+{"id": "ward-bapuji-nagar", "text": "Ward Bapuji Nagar: official area 0.68 sq km, assembly constituency Vijaya Nagar.", "meta": {"kind": "ward", "ward": "Bapuji Nagar"}}
+{"id": "ward-gali-anjenaya-temple-ward", "text": "Ward Gali Anjenaya Temple ward: official area 1.14 sq km, assembly constituency Vijaya Nagar.", "meta": {"kind": "ward", "ward": "Gali Anjenaya Temple ward"}}
+{"id": "ward-deepanjali-nagar", "text": "Ward Deepanjali Nagar: official area 2.09 sq km, assembly constituency Vijaya Nagar.", "meta": {"kind": "ward", "ward": "Deepanjali Nagar"}}
+{"id": "ward-padarayanapura", "text": "Ward Padarayanapura: official area 0.31 sq km, assembly constituency Chamarajpet.", "meta": {"kind": "ward", "ward": "Padarayanapura"}}
+{"id": "ward-jagajivanaramnagar", "text": "Ward Jagajivanaramnagar: official area 0.63 sq km, assembly constituency Chamarajpet.", "meta": {"kind": "ward", "ward": "Jagajivanaramnagar"}}
+{"id": "ward-rayapuram", "text": "Ward Rayapuram: official area 0.45 sq km, assembly constituency Chamarajpet.", "meta": {"kind": "ward", "ward": "Rayapuram"}}
+{"id": "ward-chalavadipalya", "text": "Ward Chalavadipalya: official area 0.40 sq km, assembly constituency Chamarajpet.", "meta": {"kind": "ward", "ward": "Chalavadipalya"}}
+{"id": "ward-k-r-market", "text": "Ward K R Market: official area 0.81 sq km, assembly constituency Chamarajpet.", "meta": {"kind": "ward", "ward": "K R Market"}}
+{"id": "ward-chamrajapet", "text": "Ward Chamrajapet: official area 1.03 sq km, assembly constituency Chamarajpet.", "meta": {"kind": "ward", "ward": "Chamrajapet"}}
+{"id": "ward-azad-nagar", "text": "Ward Azad Nagar: official area 0.67 sq km, assembly constituency Chamarajpet.", "meta": {"kind": "ward", "ward": "Azad Nagar"}}
+{"id": "ward-sudham-nagara", "text": "Ward Sudham Nagara: official area 1.01 sq km, assembly constituency Chickpet.", "meta": {"kind": "ward", "ward": "Sudham Nagara"}}
+{"id": "ward-dharmaraya-swamy-temple", "text": "Ward Dharmaraya Swamy Temple: official area 1.10 sq km, assembly constituency Chickpet.", "meta": {"kind": "ward", "ward": "Dharmaraya Swamy Temple"}}
+{"id": "ward-sunkenahalli", "text": "Ward Sunkenahalli: official area 1.49 sq km, assembly constituency Chickpet.", "meta": {"kind": "ward", "ward": "Sunkenahalli"}}
+{"id": "ward-vishveshwara-puram", "text": "Ward Vishveshwara Puram: official area 2.47 sq km, assembly constituency Chickpet.", "meta": {"kind": "ward", "ward": "Vishveshwara Puram"}}
+{"id": "ward-siddapura", "text": "Ward Siddapura: official area 0.66 sq km, assembly constituency Chickpet.", "meta": {"kind": "ward", "ward": "Siddapura"}}
+{"id": "ward-hombegowda-nagara", "text": "Ward Hombegowda Nagara: official area 1.41 sq km, assembly constituency Chickpet.", "meta": {"kind": "ward", "ward": "Hombegowda Nagara"}}
+{"id": "ward-jayanagar", "text": "Ward Jayanagar: official area 2.50 sq km, assembly constituency Chickpet.", "meta": {"kind": "ward", "ward": "Jayanagar"}}
+{"id": "ward-hanumanth-nagar", "text": "Ward Hanumanth Nagar: official area 0.99 sq km, assembly constituency Basavanagudi.", "meta": {"kind": "ward", "ward": "Hanumanth Nagar"}}
+{"id": "ward-srinagar", "text": "Ward Srinagar: official area 0.80 sq km, assembly constituency Basavanagudi.", "meta": {"kind": "ward", "ward": "Srinagar"}}
+{"id": "ward-basavanagudi", "text": "Ward Basavanagudi: official area 1.17 sq km, assembly constituency Basavanagudi.", "meta": {"kind": "ward", "ward": "Basavanagudi"}}
+{"id": "ward-girinagar", "text": "Ward Girinagar: official area 1.77 sq km, assembly constituency Basavanagudi.", "meta": {"kind": "ward", "ward": "Girinagar"}}
+{"id": "ward-katriguppe", "text": "Ward Katriguppe: official area 1.11 sq km, assembly constituency Basavanagudi.", "meta": {"kind": "ward", "ward": "Katriguppe"}}
+{"id": "ward-vidyapeeta-ward", "text": "Ward Vidyapeeta ward: official area 34535.00 sq km, assembly constituency Basavanagudi.", "meta": {"kind": "ward", "ward": "Vidyapeeta ward"}}
+{"id": "ward-hosakerehalli", "text": "Ward Hosakerehalli: official area 1.34 sq km, assembly constituency Padmanaba Nagar.", "meta": {"kind": "ward", "ward": "Hosakerehalli"}}
+{"id": "ward-ganesh-mandir-ward", "text": "Ward Ganesh Mandir ward: official area 1.63 sq km, assembly constituency Padmanaba Nagar.", "meta": {"kind": "ward", "ward": "Ganesh Mandir ward"}}
+{"id": "ward-karisandra", "text": "Ward Karisandra: official area 1.10 sq km, assembly constituency Padmanaba Nagar.", "meta": {"kind": "ward", "ward": "Karisandra"}}
+{"id": "ward-yediyur", "text": "Ward Yediyur: official area 1.23 sq km, assembly constituency Padmanaba Nagar.", "meta": {"kind": "ward", "ward": "Yediyur"}}
+{"id": "ward-banashankari-temple-ward", "text": "Ward Banashankari Temple ward: official area 0.68 sq km, assembly constituency Padmanaba Nagar.", "meta": {"kind": "ward", "ward": "Banashankari Temple ward"}}
+{"id": "ward-kumaraswamy-layout", "text": "Ward Kumaraswamy Layout: official area 1.87 sq km, assembly constituency Padmanaba Nagar.", "meta": {"kind": "ward", "ward": "Kumaraswamy Layout"}}
+{"id": "ward-padmanabha-nagar", "text": "Ward Padmanabha Nagar: official area 1.68 sq km, assembly constituency Padmanaba Nagar.", "meta": {"kind": "ward", "ward": "Padmanabha Nagar"}}
+{"id": "ward-lakkasandra", "text": "Ward Lakkasandra: official area 1.29 sq km, assembly constituency B.T.M. Layout.", "meta": {"kind": "ward", "ward": "Lakkasandra"}}
+{"id": "ward-adugodi", "text": "Ward Adugodi: official area 1.60 sq km, assembly constituency B.T.M. Layout.", "meta": {"kind": "ward", "ward": "Adugodi"}}
+{"id": "ward-ejipura", "text": "Ward Ejipura: official area 1.61 sq km, assembly constituency B.T.M. Layout.", "meta": {"kind": "ward", "ward": "Ejipura"}}
+{"id": "ward-koramangala", "text": "Ward Koramangala: official area 3.71 sq km, assembly constituency B.T.M. Layout.", "meta": {"kind": "ward", "ward": "Koramangala"}}
+{"id": "ward-suddagunte-palya", "text": "Ward Suddagunte Palya: official area 1.74 sq km, assembly constituency B.T.M. Layout.", "meta": {"kind": "ward", "ward": "Suddagunte Palya"}}
+{"id": "ward-sarakki", "text": "Ward Sarakki: official area 1.34 sq km, assembly constituency Jaya Nagar.", "meta": {"kind": "ward", "ward": "Sarakki"}}
+{"id": "ward-jakkasandra", "text": "Ward Jakkasandra: official area 1.52 sq km, assembly constituency B.T.M. Layout.", "meta": {"kind": "ward", "ward": "Jakkasandra"}}
+{"id": "ward-btm-layout", "text": "Ward BTM Layout: official area 2.13 sq km, assembly constituency B.T.M. Layout.", "meta": {"kind": "ward", "ward": "BTM Layout"}}
+{"id": "ward-pattabhiram-nagar", "text": "Ward Pattabhiram Nagar: official area 1.75 sq km, assembly constituency Jaya Nagar.", "meta": {"kind": "ward", "ward": "Pattabhiram Nagar"}}
+{"id": "ward-byrasandra", "text": "Ward Byrasandra: official area 0.87 sq km, assembly constituency Jaya Nagar.", "meta": {"kind": "ward", "ward": "Byrasandra"}}
+{"id": "ward-shakambari-nagar", "text": "Ward Shakambari Nagar: official area 1.85 sq km, assembly constituency Jaya Nagar.", "meta": {"kind": "ward", "ward": "Shakambari Nagar"}}
+{"id": "ward-varthuru", "text": "Ward Varthuru: official area 26.98 sq km, assembly constituency Mahadevapura.", "meta": {"kind": "ward", "ward": "Varthuru"}}
+{"id": "ward-bellanduru", "text": "Ward Bellanduru: official area 26.37 sq km, assembly constituency Mahadevapura.", "meta": {"kind": "ward", "ward": "Bellanduru"}}
+{"id": "ward-garudachar-playa", "text": "Ward Garudachar Playa: official area 6.80 sq km, assembly constituency Mahadevapura.", "meta": {"kind": "ward", "ward": "Garudachar Playa"}}
+{"id": "ward-kadugodi", "text": "Ward Kadugodi: official area 11.88 sq km, assembly constituency Mahadevapura.", "meta": {"kind": "ward", "ward": "Kadugodi"}}
+{"id": "ward-hagadur", "text": "Ward Hagadur: official area 12.68 sq km, assembly constituency Mahadevapura.", "meta": {"kind": "ward", "ward": "Hagadur"}}
+{"id": "ward-dodda-nekkundi", "text": "Ward Dodda Nekkundi: official area 12.12 sq km, assembly constituency Mahadevapura.", "meta": {"kind": "ward", "ward": "Dodda Nekkundi"}}
+{"id": "ward-hsr-layout", "text": "Ward HSR Layout: official area 6.98 sq km, assembly constituency Bommana Halli.", "meta": {"kind": "ward", "ward": "HSR Layout"}}
+{"id": "ward-bommanahalli", "text": "Ward Bommanahalli: official area 1.85 sq km, assembly constituency Bommana Halli.", "meta": {"kind": "ward", "ward": "Bommanahalli"}}
+{"id": "ward-jaraganahalli", "text": "Ward Jaraganahalli: official area 1.28 sq km, assembly constituency Bommana Halli.", "meta": {"kind": "ward", "ward": "Jaraganahalli"}}
+{"id": "ward-puttenahalli", "text": "Ward Puttenahalli: official area 2.87 sq km, assembly constituency Bommana Halli.", "meta": {"kind": "ward", "ward": "Puttenahalli"}}
+{"id": "ward-bilekhalli", "text": "Ward Bilekhalli: official area 4.24 sq km, assembly constituency Bommana Halli.", "meta": {"kind": "ward", "ward": "Bilekhalli"}}
+{"id": "ward-hongasandra", "text": "Ward Hongasandra: official area 2.16 sq km, assembly constituency Bommana Halli.", "meta": {"kind": "ward", "ward": "Hongasandra"}}
+{"id": "ward-mangammanapalya", "text": "Ward Mangammanapalya: official area 3.52 sq km, assembly constituency Bommana Halli.", "meta": {"kind": "ward", "ward": "Mangammanapalya"}}
+{"id": "ward-singasandra", "text": "Ward Singasandra: official area 9.42 sq km, assembly constituency Bommana Halli.", "meta": {"kind": "ward", "ward": "Singasandra"}}
+{"id": "ward-arakere", "text": "Ward Arakere: official area 6.45 sq km, assembly constituency Bommana Halli.", "meta": {"kind": "ward", "ward": "Arakere"}}
+{"id": "ward-uttarahalli", "text": "Ward Uttarahalli: official area 8.99 sq km, assembly constituency Bangalore South.", "meta": {"kind": "ward", "ward": "Uttarahalli"}}
+{"id": "ward-yelchenahalli", "text": "Ward Yelchenahalli: official area 1.58 sq km, assembly constituency Bangalore South.", "meta": {"kind": "ward", "ward": "Yelchenahalli"}}
+{"id": "ward-begur", "text": "Ward Begur: official area 18.80 sq km, assembly constituency Bangalore South.", "meta": {"kind": "ward", "ward": "Begur"}}
+{"id": "ward-gottigere", "text": "Ward Gottigere: official area 6.49 sq km, assembly constituency Bangalore South.", "meta": {"kind": "ward", "ward": "Gottigere"}}
+{"id": "ward-konankunte", "text": "Ward Konankunte: official area 3.42 sq km, assembly constituency Bangalore South.", "meta": {"kind": "ward", "ward": "Konankunte"}}
+{"id": "ward-anjanapura", "text": "Ward Anjanapura: official area 11.92 sq km, assembly constituency Bangalore South.", "meta": {"kind": "ward", "ward": "Anjanapura"}}
+{"id": "ward-kempegowda-ward", "text": "Ward Kempegowda Ward: official area 10.47 sq km, assembly constituency Yelahanka.", "meta": {"kind": "ward", "ward": "Kempegowda Ward"}}
+{"id": "ward-k-r-puram", "text": "Ward K R Puram: official area 5.12 sq km, assembly constituency K.R. Puram.", "meta": {"kind": "ward", "ward": "K R Puram"}}
+{"id": "ward-jnana-bharathi-ward", "text": "Ward Jnana Bharathi ward: official area 12.19 sq km, assembly constituency Rajarajeswari Nagar.", "meta": {"kind": "ward", "ward": "Jnana Bharathi ward"}}
+{"id": "ward-jayanagar-east", "text": "Ward Jayanagar East: official area 1.01 sq km, assembly constituency Jaya Nagar.", "meta": {"kind": "ward", "ward": "Jayanagar East"}}
+{"id": "ward-gurappanapalya", "text": "Ward Gurappanapalya: official area 0.68 sq km, assembly constituency Jaya Nagar.", "meta": {"kind": "ward", "ward": "Gurappanapalya"}}
+{"id": "ward-chikkalsandra", "text": "Ward Chikkalsandra: official area 1.09 sq km, assembly constituency Padmanaba Nagar.", "meta": {"kind": "ward", "ward": "Chikkalsandra"}}
+{"id": "ward-vasanthpura", "text": "Ward Vasanthpura: official area 5.34 sq km, assembly constituency Bangalore South.", "meta": {"kind": "ward", "ward": "Vasanthpura"}}
+{"id": "ward-j-p-nagar", "text": "Ward J P Nagar: official area 1.79 sq km, assembly constituency Jaya Nagar.", "meta": {"kind": "ward", "ward": "J P Nagar"}}
+{"id": "ward-madivala", "text": "Ward Madivala: official area 1.16 sq km, assembly constituency B.T.M. Layout.", "meta": {"kind": "ward", "ward": "Madivala"}}
+{"id": "ward-ramamurthy-nagar", "text": "Ward Ramamurthy Nagar: official area 7.87 sq km, assembly constituency K.R. Puram.", "meta": {"kind": "ward", "ward": "Ramamurthy Nagar"}}
+{"id": "ward-horamavu", "text": "Ward Horamavu: official area 17.32 sq km, assembly constituency K.R. Puram.", "meta": {"kind": "ward", "ward": "Horamavu"}}
+{"id": "ward-marathahalli", "text": "Ward Marathahalli: official area 3.10 sq km, assembly constituency Mahadevapura.", "meta": {"kind": "ward", "ward": "Marathahalli"}}
+{"id": "ward-hemmigepura", "text": "Ward Hemmigepura: official area 28.59 sq km, assembly constituency Yeshwantpura.", "meta": {"kind": "ward", "ward": "Hemmigepura"}}
+{"id": "alias-whitefield", "text": "The locality 'Whitefield' is interpreted as ward(s): Kadugodi, Hagadur, Garudachar Playa, Hudi. Statistics for it aggregate those wards.", "meta": {"kind": "alias"}}
+{"id": "alias-sarjapur-road", "text": "The locality 'Sarjapur Road' is interpreted as ward(s): Bellanduru. Statistics for it aggregate those wards.", "meta": {"kind": "alias"}}
+{"id": "alias-hsr", "text": "The locality 'Hsr' is interpreted as ward(s): HSR Layout. Statistics for it aggregate those wards.", "meta": {"kind": "alias"}}
+{"id": "alias-hsr-layout", "text": "The locality 'Hsr Layout' is interpreted as ward(s): HSR Layout. Statistics for it aggregate those wards.", "meta": {"kind": "alias"}}
+{"id": "alias-hal", "text": "The locality 'Hal' is interpreted as ward(s): HAL Airport. Statistics for it aggregate those wards.", "meta": {"kind": "alias"}}
