@@ -14,8 +14,10 @@ import os
 import time
 from typing import Protocol
 
+from dotenv import load_dotenv
 import requests
 
+load_dotenv(override=True)
 _MAX_RETRIES = 4
 
 
@@ -86,7 +88,7 @@ class GeminiClient:
 
 
 class GroqClient:
-    MODEL = "llama-3.3-70b-versatile"
+    MODEL = "openai/gpt-oss-120b"
     URL = "https://api.groq.com/openai/v1/chat/completions"
 
     def __init__(self, api_key: str | None = None, timeout: int = 30):
